@@ -1,0 +1,199 @@
+
+$white-color: #fafafa;
+$background-color: #e3e3e2;
+$text-color: #3f2929;
+$green: #65c190;
+$yellow: #fbaf3a;
+$red: #eb633c;
+
+header {
+    height: 80px;
+    background-color: $text-color;
+    padding: 0;
+    
+    .header_nav {
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        h1 {
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .header_title {
+        float: left;
+        font-size: 1em;
+        margin-left: 10px;
+    }
+    .header_navCont {
+        display: flex;
+        float: right;
+    }
+    ul {
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+    .red a:hover {
+        color: $red;
+    }
+    .green a:hover {
+        color: $green;
+    }
+    .yellow a:hover {
+        color: $yellow;
+    }
+    .header_naviItem {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 2px;
+        width: 140px;
+        text-align: center;
+    }
+    li {
+        display: list-item;
+    }
+}
+.Drawer {
+    display: none;
+}
+.HeaderHamburger {
+    display: none;
+}
+.Header__contents {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .pc_header {
+        display: none;
+    }
+    .Drawer {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -60%;
+        background-color: $text-color;
+        overflow-y: auto;
+        width: 60%;
+        height: 100%;
+        padding: 80px 0;
+        z-index: 8;
+        transition: 0.3s;
+        .DrawerList {
+            display: block;
+            margin-bottom: 62px;
+        }
+        .DrawerList__item {
+            display: block;
+            text-align: left;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: $text-color;
+            margin: 36px auto;
+        }
+    }
+    .Drawer.open {
+        right: 0;
+    }
+    .Drawer__bg {
+        display: none;
+    }
+    header .header_title {
+        padding: 0;
+        h1{
+            margin-left:5px;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items:center;
+            }
+        }
+    }
+    .header_title {
+        float: left;
+        font-size: 1em;
+        margin-left: 10px;
+    }
+    .Header__contents {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        width: 100%;
+        height: 80px;
+    }
+    .HeaderHamburger {
+        display: block;
+        z-index: 1000;
+        width: 32px;
+        height: 24px;
+    }
+    .HeaderHamburger__line {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 4px;
+        background-color: $white-color;
+        transition: 0.2s;
+        &::before {
+            content: "";
+            position: absolute;
+            transform: translateY(10px);
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $white-color;
+            transition: 0.5s;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            transform: translateY(-10px);
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $white-color;
+            transition: 0.5s;
+        }
+    }
+
+    .HeaderHamburger__line.open::before {
+        transform: rotate(45deg);
+    }
+    .HeaderHamburger__line.open::after {
+        transform: rotate(-45deg);
+    }
+    .HeaderHamburger__line.open {
+        background-color: transparent;
+    }
+    .Drawer__bg.open {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #3f2929;
+        opacity: 0.4;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    .header_title {
+        a {
+           
+            margin-left: 5px;
+        }
+    }
+}
