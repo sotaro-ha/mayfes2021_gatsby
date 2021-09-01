@@ -1,0 +1,134 @@
+$white-color: #fafafa;
+$background-color: #e3e3e2;
+$text-color: #3f2929;
+$green: #65c190;
+$yellow: #fbaf3a;
+$red: #eb633c;
+
+.learn_title {
+  background-image: url(../images/learn/3_Banner.svg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  width: 100%;
+  padding: 20px;
+  img {
+    width: 450px;
+  }
+}
+.enjoy_title {
+  background-image: url(../images/enjoy/tanosimu_main.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  width: 100%;
+  padding: 20px;
+  img {
+    width: 450px;
+  }
+}
+.touch_title {
+  background-image: url(../images/touch/2_Banner_1.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  width: 100%;
+  padding: 0px;
+  img {
+    width: 450px;
+  }
+}
+.image_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+.explanation {
+  background-color: $background-color;
+}
+.text_box {
+  margin: 0 auto;
+  padding: 50px 0 50px 0;
+  width: 60%;
+  max-width: 1200px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+}
+.title_box {
+  color: $white-color;
+  background-color: $text-color;
+  width: 40%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 720px) {
+  .content_panel {
+    font-size: 16px;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    padding: 3px;
+    text-align: center;
+  }
+  .text_box {
+    font-size: 16px;
+    padding: 30px 0px;
+    width: 80%;
+  }
+  .image_box {
+    height: 250px;
+    img {
+      width: 280px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .learn_title {
+    background-image: url(../images/learn/3_Banner_Phone.svg);
+    background-size: cover;
+  }
+  .touch_title {
+    background-image: none;
+    .image_box {
+      background-image: url(../images/touch/2_Banner_paper.png);
+      background-size: contain;
+      background-position: left;
+    }
+    .text_box {
+      background-image: url(../images/touch/2_Banner_pen.png);
+      background-size: contain;
+      background-position: right;
+    }
+  }
+  .header_title {
+    a {
+      img {
+        width: 50px;
+      }
+      margin-left: 5px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .title {
+    background-size: contain;
+    @media only screen and (min-width: 1120px) {
+      .title {
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+}

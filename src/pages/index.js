@@ -1,13 +1,17 @@
 // Step 1: Import React
 import * as React from 'react'
 import { Link } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../components/layout_index'
+import Hero from "../components/hero"
+import Title from "../components/title"
+
 
 // Step 2: Define your component
-const IndexPage = () => {
+const IndexPage = (props) => {    
+  console.log(props.location.key,"hello")      
   return (
-    <Layout pageTitle="Home Page">
-    <p>I'm making this by following the Gatsby Tutorial.</p>
+    <Layout >
+     <h1>{props.location.key}</h1>
   </Layout>
   )
 }

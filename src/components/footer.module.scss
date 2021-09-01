@@ -6,49 +6,50 @@ $yellow: #fbaf3a;
 $red: #eb633c;
 
 footer {
-    margin-top: 50px;
-    font-size: 13px;
-    font-weight: 700px;
-    img {
-        margin: 10px;
+  margin-top: 50px;
+  font-size: 13px;
+  font-weight: 700px;
+  img {
+    margin: 10px;
+  }
+  .footer_nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .left {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .right {
+    text-align: right;
+    padding: 10px;
+    &:hover {
+      opacity: 0.8;
     }
-    .footer_nav {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 10px;
-    }
-    .left {
-        text-align: left;
-        margin-left: 10px;
-    }
-    .right {
-        text-align: right;
-        &:hover {
-            opacity: 0.8;
-        }
-    }
-    p {
-        text-align: center;
-    }
+  }
+  p {
+    text-align: center;
+  }
 }
 .fa-chevron-up {
-    font-size: 4em;
-    font-weight: 500px;
+  font-size: 4em;
+  font-weight: 500px;
 }
 .footer_logo_box {
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .fa-twitter {
-    margin: 10px;
-    font-size: 2em;
-    background-color: $text-color;
-    width: 45px;
-    height: 45px;
-    color: $white-color;
-    border-radius: 50%;
-    padding-top: 10px;
-    text-align: center;
+  margin: 10px;
+  font-size: 2em;
+  background-color: $text-color;
+  width: 45px;
+  height: 45px;
+  color: $white-color;
+  border-radius: 50%;
+  padding-top: 10px;
+  text-align: center;
 }

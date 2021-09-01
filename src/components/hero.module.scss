@@ -1,0 +1,110 @@
+$white-color: #fafafa;
+$background-color: #e3e3e2;
+$text-color: #3f2929;
+$green: #65c190;
+$yellow: #fbaf3a;
+$red: #eb633c;
+
+.title {
+  background-image: url("../images/general/2_Banner 1.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  width: 100%;
+  padding: 0;
+}
+.background_touch {
+  background-image: url("../images/general/2_Banner 1.png");
+}
+.title_1 {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.explanation {
+  background-color: $background-color;
+}
+.text_box {
+  margin: 0 auto;
+  padding: 50px 0 50px 0;
+  width: 60%;
+  max-width: 1200px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+}
+.title_box {
+  color: $white-color;
+  background-color: $text-color;
+  width: 40%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 720px) {
+  .content_panel {
+    font-size: 16px;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    padding: 3px;
+    text-align: center;
+  }
+  .text_box {
+    font-size: 16px;
+    padding: 30px 0px;
+    width: 80%;
+  }
+  .image_box {
+    height: 30vh;
+    img {
+      width: 280px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .title {
+    background-image: none;
+    background-size: cover;
+  }
+  .header_title {
+    a {
+      img {
+        width: 50px;
+      }
+      margin-left: 5px;
+    }
+  }
+  .title_1 {
+    background-image: url("../images/general/2_Banner_paper.png");
+    background-size: contain;
+    background-position: left;
+  }
+  .title_2 {
+    background-image: url("../images/general/2_Banner_pen.png");
+    background-size: contain;
+    background-position: right;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .title {
+    background-size: contain;
+    @media only screen and (min-width: 1120px) {
+      .title {
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+}

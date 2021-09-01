@@ -1,0 +1,41 @@
+.colmn {
+  padding: 20px;
+}
+.colmn_title {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0px 0 30px 0;
+}
+.colmn_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.circle {
+  width: 250px;
+  border: 2px solid #3f2929;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 15px;
+  .colmn_image {
+    text-align: center;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .colmn_text {
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: left;
+  }
+}

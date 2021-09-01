@@ -9,28 +9,28 @@ const Header = () => {
         <div className={Styles.pc_header}>
             <div className={Styles.header_nav}>
                 <h1 className={Styles.header_title}>
-                    <a href="/"><StaticImage src="../images/general/Logo_Header_PC.svg" width={200}alt="" / ></a>
+                    <Link to={"/"}><StaticImage src="../images/general/Logo_Header_PC.svg" width={200} alt="" / ></Link>
                 </h1>
                 <ul className={Styles.header_navCont}>
                     <li className={Styles.header_naviItem }className={Styles.green}>
-                        <a href="/mayfes2021/">
+                        <a href="/">
                             紙Fes.
                         </a>
                     </li>
                     <li className={Styles.header_naviItem } className={Styles.green}>
-                        <a href="/mayfes2021/learn">
+                        <Link to ={"/learn/"}>
                             紙を知る
-                        </a>
+                        </Link>
                     </li>
                     <li className={Styles.header_naviItem }className={Styles.yellow}>
-                        <a href="/mayfes2021/touch">
+                        <Link to={"/touch/"}>
                             紙に触れる
-                        </a>
+                        </Link>
                     </li>
                     <li className={Styles.header_naviItem }className={Styles.red}>
-                        <a href="/mayfes2021/enjoy">
+                        <Link to={"/enjoy/"}>
                             紙を楽しむ
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
