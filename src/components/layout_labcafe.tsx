@@ -13,7 +13,11 @@ const LabCafeTop = () => {
     <>
       {/* <div> */}
       <div className={classes.top__image__wrap}>
-      <StaticImage src={`../images/labcafe/top_image_1.svg`} alt="" className={classes.top__image} />
+        <StaticImage
+          src={`../images/labcafe/top_image_1.svg`}
+          alt=""
+          className={classes.top__image}
+        />
       </div>
       <p className={classes.top__description}>
         「紙Festa.」の展示を行っております。
@@ -44,9 +48,49 @@ const LabCafeTop = () => {
 };
 
 const LabCafeDetail = () => (
-  <>
-    <div></div>
-  </>
+  <div className={classes.detail__back}>
+    <div className={classes.learn__container}>
+      <StaticImage
+        src={`../images/labcafe/learn.jpg`}
+        alt="紙を知る"
+        className={classes.learn__image}
+      />
+      <div className={[classes.detail__container, classes.learn__description].join(" ")}>
+        <h2 className={classes.detail__title}>紙を知る</h2>
+        <p className={classes.detail__paragraph}>
+        身近にある紙製品をじっくり見つめると色々な発見がありました。「伝統」「機能」「演出」の3つの視点に立って紙を再発見します。
+        </p>
+      </div>
+    </div>
+
+    <div className={classes.touch__container}>
+      <StaticImage
+        src={`../images/labcafe/touch.jpg`}
+        alt="紙に触れる"
+        className={classes.touch__image}
+      />
+      <div className={[classes.detail__container, classes.touch__description].join(" ")}>
+        <h2 className={classes.detail__title}>紙に触れる</h2>
+        <p className={classes.detail__paragraph}>
+        「紙に触れる」では一枚小説を読んでいただけます。 でもただの一枚小説ではありません。色んな趣向が凝らしてあります。
+        </p>
+      </div>
+    </div>
+
+    <div className={classes.enjoy__container}>
+      <StaticImage
+        src={`../images/labcafe/enjoy.jpg`}
+        alt="紙を楽しむ"
+        className={classes.enjoy__image}
+      />
+      <div className={[classes.detail__container, classes.enjoy__description].join(" ")}>
+        <h2 className={classes.detail__title}>紙を楽しむ</h2>
+        <p className={classes.detail__paragraph}>
+        紙はデジタルにはない「質感」を持っています。この企画ではこの紙の質感と用途の組み合わせをちぐはぐにしてみました。
+        </p>
+      </div>
+    </div>
+  </div>
 );
 
 export const LabCafePageLayout = () => {
@@ -54,6 +98,7 @@ export const LabCafePageLayout = () => {
     <>
       <Header />
       <LabCafeTop />
+      <LabCafeDetail />
       <Modal />
       <Footer />
     </>
