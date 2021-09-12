@@ -1,28 +1,61 @@
-
-import * as React from "react";
-import Title from "../components/title";
-import Header from "../components/header";
-import View from "../components/view";
+import React from "react";
+import Header from "./header";
 import Modal from "react-modal/lib/components/Modal";
-import Footer from "../components/footer";
+import Footer from "./footer";
+import { StaticImage } from "gatsby-plugin-image";
+
+// ts対応（応急処置）
+const classes = require("./layout_labcafe.module.scss");
+// const indexClasses = require("./layout_index.module.scss")
+
+const LabCafeTop = () => {
+  return (
+    <>
+      {/* <div> */}
+      <div className={classes.top__image__wrap}>
+      <StaticImage src={`../images/labcafe/top_image_1.svg`} alt="" className={classes.top__image} />
+      </div>
+      <p className={classes.top__description}>
+        「紙Festa.」の展示を行っております。
+        <br /> お気軽にお立ち寄りください。
+      </p>
+      <a
+        className={classes.ticket}
+        href="https://peatix.com/group/11570814"
+        rel="external noreferrer"
+        target="_blank"
+      >
+        ご予約はこちら
+      </a>
+
+      <div className={classes.info__container}>
+        <div className={[classes.info__item, classes.info__top].join(" ")}>
+          2021. 9/12 (日) ▶︎ 9/25 (土)
+          <br />
+          平日 16:00 - 20:00 / 土日祝 13:00 - 17:00
+        </div>
+        <div className={classes.info__item}>
+          東京都文京区本郷4-1-3 明和本郷ビル7F
+        </div>
+      </div>
+      {/* </div> */}
+    </>
+  );
+};
+
+const LabCafeDetail = () => (
+  <>
+    <div></div>
+  </>
+);
 
 export const LabCafePageLayout = () => {
   return (
     <>
       <Header />
-      <Title
-        message="紙はデジタルにはない「質感」を持っています。そして、紙の質感によって用途が異なります。この企画ではこの紙の質感と用途の組み合わせをちぐはぐにしてみました。是非様々な作品を見て(そして印刷して)この身の回りの紙の質感を楽しんでください。"
-        // img={Enjoy}
-        class="title-module--enjoy_title--2HaAQ"
-      />
-      <View
-        show_2="none"
-        message_1="クリックすると各作品をキャプションとともに大きな画像でお楽しみいただけます。"
-        message_2="本作品の中には実際に印刷して、お楽しみ頂くことができるものもあります。"
-      />
+      <LabCafeTop />
       <Modal />
       <Footer />
     </>
   );
 };
-

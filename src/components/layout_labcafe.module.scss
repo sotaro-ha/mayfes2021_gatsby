@@ -1,0 +1,51 @@
+// 本当はグローバル変数にするべきだが省略
+$white-color: #fafafa;
+$background-color: #e3e3e2;
+$text-color: #3f2929;
+$green: #65c190;
+$yellow: #fbaf3a;
+$red: #eb633c;
+
+.top {
+  &__description {
+    text-align: center;
+    font-size: smaller;
+  }
+  &__image {
+    margin: 0px auto;
+  }
+  &__image__wrap {
+    margin: 0px auto;
+    width: fit-content;
+  }
+}
+
+.ticket {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: $text-color 1px solid;
+  color: $text-color;
+  transition: all 0.35s ease-in-out;
+  &:hover {
+    color: $white-color;
+    background-color: $text-color;
+  }
+}
+
+.info {
+  &__container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__item {
+    margin: 5px auto;
+    padding: 0px 15px;
+    width: fit-content;
+  }
+  &__top {
+    border-bottom: $text-color 2px dashed;
+  }
+}
