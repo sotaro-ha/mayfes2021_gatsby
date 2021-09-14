@@ -41,6 +41,11 @@ const LabCafeTop = () => {
         <div className={classes.info__item}>
           東京都文京区本郷4-1-3 明和本郷ビル7F
         </div>
+        <StaticImage
+          src={`../images/labcafe/map.svg`}
+          alt=""
+          // className={}
+        />
       </div>
       {/* </div> */}
     </>
