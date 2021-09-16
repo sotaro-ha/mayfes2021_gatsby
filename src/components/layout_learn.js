@@ -3,9 +3,9 @@ import { Link } from 'gatsby'
 import Header from "./header"
 import Footer from "./footer"
 import Title from "./title"
+import Modal from "./modal_learn"
 import View from "./view"
-import * as Styles from "../components/layout_index.module.scss"
-import {StaticImage} from "gatsby-plugin-image"
+
 
 
 
@@ -22,6 +22,7 @@ const Layout = ({  }) => {
         show_2="none"
         message_1="クリックすると各作品をキャプションとともに大きな画像でお楽しみいただけます。"
         />
+        <Modal/>
         <Footer />
       </div>
     )

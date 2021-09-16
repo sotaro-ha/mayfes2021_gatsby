@@ -8,11 +8,11 @@ import Title from "../components/title"
 
 // Step 2: Define your component
 const IndexPage = (props) => {    
-  console.log(props.location.key,"hello")      
   return (
     <Layout >
      <h1>{props.location.key}</h1>
   </Layout>
+  
   )
 }
 
