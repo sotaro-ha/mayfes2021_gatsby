@@ -4,7 +4,9 @@ import Header from "./header"
 import Footer from "./footer"
 import Title from "./title"
 import View from "./view"
+import Modal from "./modal_touch"
 import Touch from "../images/touch/2_Brown.svg"
+
 import * as Styles from "../components/layout_index.module.scss"
 import {StaticImage} from "gatsby-plugin-image"
 
@@ -21,6 +23,7 @@ const Layout = ({ pageTitle, children }) => {
        <View
        message_1="まず、イラストをクリックすると、小説作品について詳しく知ることができます。"
    message_2="好きな小説を見つけたら、印刷しましょう。すると、小説の面白さ倍増です。"/>
+        <Modal/>
         <Footer />
       </div>
     )

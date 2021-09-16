@@ -14,7 +14,7 @@ const Header = () => {
                 <ul className={Styles.header_navCont}>
                     <li className={Styles.header_naviItem }className={Styles.green}>
                         <a href="/">
-                            紙Fes.
+                            Labcafe
                         </a>
                     </li>
                     <li className={Styles.header_naviItem } className={Styles.green}>
@@ -49,7 +49,7 @@ const Header = () => {
         <nav className={Styles.Drawer}>
             <ul className={Styles.DrawerList}>
                 <li className={Styles.DrawerList__item}>
-                    <a href="/mayfes2021/" className={Styles.DrawerLink}>紙Fes.</a>
+                    <a href="/mayfes2021/" className={Styles.DrawerLink}>Labcafe</a>
                 </li>
                 <li className={Styles.DrawerList__item}>
                     <a href="/mayfes2021/" className={Styles.DrawerLink}>紙を知る</a>
