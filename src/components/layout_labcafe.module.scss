@@ -1,0 +1,177 @@
+// 本当はグローバル変数にするべきだが省略
+$white-color: #fafafa;
+$background-color: #e3e3e2;
+$text-color: #3f2929;
+$green: #65c190;
+$yellow: #fbaf3a;
+$red: #eb633c;
+
+$sp: 480px;
+$md: 750px;
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: ($md)) {
+    @content;
+  }
+}
+
+.top {
+  &__description {
+    text-align: center;
+    font-size: smaller;
+    @include sp {
+      font-size: 0.85rem;
+    }
+  }
+  &__image {
+    margin: 0px auto;
+  }
+  &__image__wrap {
+    margin: 0px auto;
+    width: fit-content;
+  }
+}
+
+.ticket {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: $text-color 1px solid;
+  color: $text-color;
+  transition: all 0.35s ease-in-out;
+  &:hover {
+    color: $white-color;
+    background-color: $text-color;
+  }
+}
+
+.info {
+  &__container {
+    margin: 0 auto;
+    text-align: center;
+
+    @include sp {
+      font-size: small;
+    }
+  }
+  &__item {
+    margin: 5px auto;
+    padding: 0px 15px;
+    width: fit-content;
+  }
+  &__top {
+    border-bottom: $text-color 2px dashed;
+    @include sp {
+      border-bottom: $text-color 1px dashed;
+    }
+  }
+}
+
+.detail {
+  &__back {
+    background: $yellow;
+    clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0 100%);
+  }
+  &__title {
+    font-weight: normal;
+  }
+  &__container {
+    background: $text-color;
+    color: $white-color;
+    width: fit-content;
+    padding: 10px;
+    max-width: 35vw;
+    @include md {
+      max-width: 70vw;
+      margin-top: 10px;
+    }
+  }
+  &__paragraph {
+    font-size: 0.75em;
+  }
+}
+
+.learn {
+  &__container {
+    // -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 95%);
+    background: $green;
+    padding: 10%;
+    position: relative;
+    @include md {
+      padding: 15vw;
+    }
+  }
+  &__image {
+    max-width: 70vw;
+  }
+  &__description {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    @include md {
+      position: initial;
+    }
+  }
+}
+
+.touch {
+  &__container {
+    // -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
+    // clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 95%);
+    // background: $yellow;
+    padding: 10%;
+    position: relative;
+    @include md {
+      padding: 15vw;
+    }
+  }
+  &__image {
+    max-width: 70vw;
+    margin-left: 15vw;
+    @include md {
+      margin: auto;
+    }
+  }
+  &__description {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    @include md {
+      position: initial;
+    }
+  }
+}
+
+
+.enjoy {
+  &__container {
+    // -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
+    background: $red;
+    padding: 10%;
+    position: relative;
+    @include md {
+      padding: 15vw;
+    }
+  }
+  &__image {
+    max-width: 70vw;
+  }
+  &__description {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    @include md {
+      position: initial;
+    }
+  }
+}
