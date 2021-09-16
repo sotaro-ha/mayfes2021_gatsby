@@ -2,6 +2,7 @@ import React from 'react'
 import * as Styles from "./header.module.scss"
 import { Link } from 'gatsby'
 import {StaticImage} from "gatsby-plugin-image"
+import Menu from "../components/hamburger";
 
 const Header = () => {
     return (
@@ -11,9 +12,12 @@ const Header = () => {
                 <h1 className={Styles.header_title}>
                     <Link to={"/"}><StaticImage src="../images/general/Logo_Header_PC.svg" width={200} alt="" / ></Link>
                 </h1>
+                <h1 className={Styles.mobile_title}>
+                    <Link to={"/"}><StaticImage src="../images/general/Logo_Header_Mobile.svg" width={50} alt="" / ></Link>
+                </h1>
                 <ul className={Styles.header_navCont}>
                     <li className={Styles.header_naviItem }className={Styles.green}>
-                        <a href="/">
+                        <a href="/labcafe">
                             Labcafe
                         </a>
                     </li>
@@ -35,34 +39,7 @@ const Header = () => {
                 </ul>
             </div>
         </div>
-        <div className={Styles.Header__contents}>
-            <div className={Styles.header_nav}>
-            <h1 className={Styles.header_title}>
-                <a href="/"><StaticImage src="../images/general/Logo_Header_mobile.svg"width={45}alt=""/></a>
-            </h1>
-            <button type="button" className={Styles.HeaderHamburger}>
-                <span className={Styles.HeaderHamburger__line}></span>
-            </button>
-            </div>
-
-        </div>
-        <nav className={Styles.Drawer}>
-            <ul className={Styles.DrawerList}>
-                <li className={Styles.DrawerList__item}>
-                    <a href="/mayfes2021/" className={Styles.DrawerLink}>Labcafe</a>
-                </li>
-                <li className={Styles.DrawerList__item}>
-                    <a href="/mayfes2021/" className={Styles.DrawerLink}>紙を知る</a>
-                </li>
-                <li className={Styles.DrawerList__item}>
-                    <a href="/mayfes2021/" className={Styles.DrawerLink}>紙に触れる</a>
-                </li>
-                <li className={Styles.DrawerList__item}>
-                    <a href="/mayfes2021/" className={Styles.DrawerLink}>紙を楽しむ</a>
-                </li>
-            </ul>
-        </nav>
-        <div className={Styles.Drawer__bg}></div>
+        <Menu  width={300} right  />
     </header>
     )
 }

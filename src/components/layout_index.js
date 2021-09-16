@@ -5,10 +5,6 @@ import Footer from "./footer"
 import * as Styles from "../components/layout_index.module.scss"
 import {StaticImage} from "gatsby-plugin-image"
 
-
-   
-
-
 const Layout = ({ pageTitle, children }) => {
   return (
     <div>
@@ -62,6 +58,7 @@ const Layout = ({ pageTitle, children }) => {
     </section>
      
       <Footer />
+      
     </div>
   )
 }

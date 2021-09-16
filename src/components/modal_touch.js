@@ -144,7 +144,7 @@ const ModalMultiple = () => {
       >
         <div>
           <h2>予感</h2>
-          <div className={Styles.imageWrapper}><div className={Styles.image_2}style={{backgroundImage:`url(${Img17})`}}></div> <p className={Styles.text}>いつもだったら濡らしたくない、紙。
+          <div className={Styles.imageWrapper}><div className={Styles.image_3}style={{backgroundImage:`url(${Img17})`}}></div> <p className={Styles.text}>いつもだったら濡らしたくない、紙。
 滲むとちょっとテンションが下がる、紙。
 でも、紙って意外と濡れても強いし、滲んだ色って実は神秘的。
 たまにはあえて、紙を濡らしてみるのも悪くない。 そんな思いから作った、”濡らすと読めるミステリー”です。 紙を濡らしてみるワクワク感と、結末に迫るワクワク感。 両方を味わっていただけたらなと思います。 ※A4普通紙に、インクジェット(家庭用)プリンターで印刷して下さい。レーザープリンター(コンビニなど)での印刷では、濡らしても読むことができないのでご注意下さい。 ※まず上の本文を読んでから、結末(下のモザイク部分)を濡らしてお読み下さい。水をたっぷり含ませたティッシュなどでなぞるとしっかり濡らせます。少し時間がかかりますが、乾くまで待つと読みやすくなります。 本文著者：山川方夫</p></div>
