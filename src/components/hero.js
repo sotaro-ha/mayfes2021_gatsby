@@ -8,6 +8,7 @@ const Hero = ({Classname}) => {
         <div className={Classname}>
            <div className={Styles.title_1}>
                 <div className={Styles.image_box}>
+                    
                 </div>
             </div> 
         </div>

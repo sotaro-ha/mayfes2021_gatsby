@@ -7,8 +7,7 @@ import View from "./view"
 import Modal from "./modal_touch"
 import Touch from "../images/touch/2_Brown.svg"
 
-import * as Styles from "../components/layout_index.module.scss"
-import {StaticImage} from "gatsby-plugin-image"
+
 
 const Layout = ({ pageTitle, children }) => {
     return (
