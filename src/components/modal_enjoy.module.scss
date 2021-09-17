@@ -169,16 +169,9 @@ p {
     align-items: center;
     font-weight: 500;
     border-radius: 5px;
-<<<<<<< HEAD
-    // &:hover {
-    //   background-color: $text-color;
-    //   color: $white-color;
-    // }
-=======
     &:hover {
       filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.3));
     }
->>>>>>> 6efe8557a05ebbb7d3c59e394fef38c142dc4258
   }
   .verticalWrapper {
     display: inline-block;
