@@ -23,6 +23,22 @@ $red: #eb633c;
   font-size: 36px;
   font-weight: 500;
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  &:hover {
+    background-color: $text-color;
+    color: $white-color;
+  }
+  &__pictogram {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0.2;
+  }
 }
 h3 {
   font-weight: 500;
