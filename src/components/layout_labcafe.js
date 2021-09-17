@@ -4,8 +4,10 @@ import Modal from "react-modal/lib/components/Modal";
 import Footer from "./footer";
 import { StaticImage } from "gatsby-plugin-image";
 
+import * as classes from "./layout_labcafe.module.scss"
+
 // ts対応（応急処置）
-const classes = require("./layout_labcafe.module.scss");
+// const classes = require("./layout_labcafe.module.scss");
 // const indexClasses = require("./layout_index.module.scss")
 
 const LabCafeTop = () => {
