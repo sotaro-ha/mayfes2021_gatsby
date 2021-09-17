@@ -2,8 +2,9 @@
 
 
 module.exports = {
+  pathPrefix: `/mayfes2021`,
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://dp9.tokyo/mayfes2021",
     title: "mayfes2021",
   },
   plugins: [
