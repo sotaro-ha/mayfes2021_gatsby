@@ -29,7 +29,7 @@ const Header = () => {
           </h1>
           <ul className={Styles.header_navCont}>
             <li className={Styles.header_naviItem} className={Styles.green}>
-              <a href="/labcafe">Lab-Cafe</a>
+            <Link to={"/labcafe/"}>labcafe</Link>
             </li>
             <li className={Styles.header_naviItem} className={Styles.green}>
               <Link to={"/learn/"}>紙を知る</Link>
