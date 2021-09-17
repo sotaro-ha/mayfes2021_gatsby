@@ -11,6 +11,7 @@ module.exports = {
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
+    `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
