@@ -26,6 +26,10 @@ $red: #eb633c;
   text-align: center;
   padding: 5px;
   background-size: cover;
+
+  &:hover {
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.3));
+  }
 }
 .container {
   width: 100%;

@@ -134,6 +134,7 @@ p {
     text-align: center;
     font-size: 14px;
   }
+
   .content_panel {
     font-size: 18px;
     width: 80%;
@@ -152,6 +153,9 @@ p {
     align-items: center;
     font-weight: 500;
     border-radius: 5px;
+    &:hover {
+      filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.3));
+    }
   }
   .verticalWrapper {
     display: inline-block;

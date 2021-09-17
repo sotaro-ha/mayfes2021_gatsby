@@ -12,7 +12,9 @@ html {
   overflow-y: scroll; /* All browsers without overlaying scrollbars */
   -webkit-text-size-adjust: 100%; /* iOS 8+ */
 }
-
+* {
+  transition: all 0.3s ease-out;
+}
 article,
 aside,
 details,
@@ -1438,7 +1440,6 @@ body.fixed {
     transition: all ease-in-out 0.3s;
     &:hover {
       transform: scale(1.01);
-
     }
   }
 }

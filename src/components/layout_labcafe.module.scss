@@ -20,7 +20,9 @@ $md: 750px;
     @content;
   }
 }
-
+* {
+  transition: all 0.3s ease-out;
+}
 .top {
   &__description {
     text-align: center;
@@ -151,7 +153,6 @@ $md: 750px;
     }
   }
 }
-
 
 .enjoy {
   &__container {
