@@ -5,7 +5,7 @@ import Footer from "./footer"
 import Title from "./title"
 import Modal from "./modal_learn"
 import View from "./view"
-import Img1 from  "../images/learn/3_Banner.png"
+import Img1 from  "../images/learn/1_Brown.svg"
 
 
 
