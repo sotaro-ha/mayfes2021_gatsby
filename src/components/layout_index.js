@@ -10,7 +10,7 @@ const Layout = ({ pageTitle, children }) => {
     <div>
       <Header />
       <section className={Styles.title}>
-        <div className={Styles.MV}></div>
+        <div className={Styles.mainVisual}></div>
 
         <div className={(Styles.title_2, Styles.bg_title2)}>
           <div className={Styles.text_box}>
