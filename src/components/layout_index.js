@@ -55,17 +55,14 @@ const Layout = ({ pageTitle, children }) => {
         <div className={Styles.colmn_box}>
           <div className={Styles.area}>
             <div className={Styles.colmn_image}>
-              <a
-                href="/mayfes2021/learn"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link to="/learn"
               >
                 <StaticImage src="../images/index/Main_1.svg" />
                 <StaticImage
                   src="../images/index/Main_1_Hover.svg"
                   className={Styles.active}
                 />
-              </a>
+              </Link>
             </div>
             <div className={Styles.colmn_text}>
               紙ならでは！というデザインをご紹介します。
@@ -73,17 +70,14 @@ const Layout = ({ pageTitle, children }) => {
           </div>
           <div className={Styles.area}>
             <div className={Styles.colmn_image}>
-              <a
-                href="/mayfes2021/touch"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link to="/touch"
               >
                 <StaticImage src="../images/index/Main_2.svg" />
                 <StaticImage
                   src="../images/index/Main_2_Hover.svg"
                   className={Styles.active}
                 />
-              </a>
+              </Link>
             </div>
             <div className={Styles.colmn_text}>
               趣向を凝らした一枚小説を印刷して読むことができます。
@@ -91,17 +85,13 @@ const Layout = ({ pageTitle, children }) => {
           </div>
           <div className={Styles.area}>
             <div className={Styles.colmn_image}>
-              <a
-                href="/mayfes2021/enjoy"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to="enjoy">
                 <StaticImage src="../images/index/Main_3.svg" />
                 <StaticImage
                   src="../images/index/Main_3_Hover.svg"
                   className={Styles.active}
                 />
-              </a>
+              </Link>
             </div>
             <div className={Styles.colmn_text}>
               紙の質感と使い方をチグハグにした展示をご覧いただきます。
