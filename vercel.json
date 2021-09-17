@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/*",
-      "destination": "/mayfes2021/*"
+      "source": "/",
+      "destination": "/mayfes2021/"
     }
   ]
 }
