@@ -6,6 +6,10 @@ $yellow: #fbaf3a;
 $red: #eb633c;
 
 header {
+  .header_logo {
+    width: 200px;
+    height: auto;
+  }
   height: 80px;
   background-color: $text-color;
   padding: 0;
@@ -81,8 +85,16 @@ header {
     display: none;
   }
   .mobile_title {
-    display: inline-block;
+    display: block;
+    height: 100%;
+
+    .mobile_title_logo {
+      position: absolute;
+      left: 16px;
+      top: 16px;
+    }
   }
+
   .pc_header {
     display: none;
   }

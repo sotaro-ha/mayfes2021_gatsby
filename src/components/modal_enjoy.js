@@ -205,12 +205,7 @@ const ModalMultiple = () => {
           </p>
         </div>
         <p className={Styles.author}>製作者:kamiya</p>
-        <a href="">
-          <div className={Styles.driveButton}>
-            <FontAwesomeIcon icon={faTwitter} />
-            　シェア
-          </div>
-        </a>
+        <a href="https://twitter.com/share?url=http://dp9.tokyo/mayfes2021/enjoy%20%23紙festa"><div className={Styles.driveButton}><FontAwesomeIcon icon={faTwitter}/>　シェア</div></a>
       </Modal>
       <Modal
         isOpen={modalIsOpen === 2}
@@ -230,12 +225,7 @@ const ModalMultiple = () => {
           <p className={Styles.text}>くしゃっと丸めてポストにポイ</p>
         </div>
         <p className={Styles.author}>製作者:ツユキ</p>
-        <a href="">
-          <div className={Styles.driveButton}>
-            <FontAwesomeIcon icon={faTwitter} />
-            　シェア
-          </div>
-        </a>
+        <a href="https://twitter.com/share?url=http://dp9.tokyo/mayfes2021/enjoy%20%23紙festa"><div className={Styles.driveButton}><FontAwesomeIcon icon={faTwitter}/>　シェア</div></a>
       </Modal>
       <Modal
         isOpen={modalIsOpen === 3}
@@ -259,12 +249,8 @@ const ModalMultiple = () => {
           </div>
         </div>
         <p className={Styles.author}>製作者:ritar</p>
-        <a href="">
-          <div className={Styles.driveButton}>
-            <FontAwesomeIcon icon={faTwitter} />
-            　シェア
-          </div>
-        </a>
+        <a href="https://twitter.com/share?url=http://dp9.tokyo/mayfes2021/enjoy%20%23紙festa"><div className={Styles.driveButton}><FontAwesomeIcon icon={faTwitter}/>　シェア</div></a>
+       
       </Modal>
       <Modal
         isOpen={modalIsOpen === 4}
@@ -300,12 +286,7 @@ const ModalMultiple = () => {
           </p>
         </div>
         <p className={Styles.author}>製作者:orui</p>
-        <a href="">
-          <div className={Styles.driveButton}>
-            <FontAwesomeIcon icon={faTwitter} />
-            　シェア
-          </div>
-        </a>
+        <a href="https://twitter.com/share?url=http://dp9.tokyo/mayfes2021/enjoy%20%23紙festa"><div className={Styles.driveButton}><FontAwesomeIcon icon={faTwitter}/>　シェア</div></a>
       </Modal>
       <Modal
         isOpen={modalIsOpen === 5}
@@ -349,12 +330,7 @@ const ModalMultiple = () => {
           </p>
         </div>
         <p className={Styles.author}>製作者:Shiba</p>
-        <a href="">
-          <div className={Styles.driveButton}>
-            <FontAwesomeIcon icon={faTwitter} />
-            　シェア
-          </div>
-        </a>
+        <a href="https://twitter.com/share?url=http://dp9.tokyo/mayfes2021/enjoy%20%23紙festa"><div className={Styles.driveButton}><FontAwesomeIcon icon={faTwitter}/>　シェア</div></a>
       </Modal>
       <Modal
         isOpen={modalIsOpen === 6}
@@ -376,12 +352,7 @@ const ModalMultiple = () => {
           </p>
         </div>
         <p className={Styles.author}>製作者:hiramai</p>
-        <a href="">
-          <div className={Styles.driveButton}>
-            <FontAwesomeIcon icon={faTwitter} />
-            　シェア
-          </div>
-        </a>
+        <a href="https://twitter.com/share?url=http://dp9.tokyo/mayfes2021/enjoy%20%23紙festa"><div className={Styles.driveButton}><FontAwesomeIcon icon={faTwitter}/>　シェア</div></a>
       </Modal>
       <Modal
         isOpen={modalIsOpen === 7}
@@ -411,12 +382,7 @@ const ModalMultiple = () => {
           </p>
         </div>
         <p className={Styles.author}>製作者:ヨイヨイ</p>
-        <a href="">
-          <div className={Styles.driveButton}>
-            <FontAwesomeIcon icon={faTwitter} />
-            　シェア
-          </div>
-        </a>
+        <a href="https://twitter.com/share?url=http://dp9.tokyo/mayfes2021/enjoy%20%23紙festa"><div className={Styles.driveButton}><FontAwesomeIcon icon={faTwitter}/>　シェア</div></a>
       </Modal>
       <Modal
         isOpen={modalIsOpen === 8}
@@ -438,12 +404,7 @@ const ModalMultiple = () => {
           </p>
         </div>
         <p className={Styles.author}>製作者:さちこ</p>
-        <a href="">
-          <div className={Styles.driveButton}>
-            <FontAwesomeIcon icon={faTwitter} />
-            　シェア
-          </div>
-        </a>
+        <a href="https://twitter.com/share?url=http://dp9.tokyo/mayfes2021/enjoy%20%23紙festa"><div className={Styles.driveButton}><FontAwesomeIcon icon={faTwitter}/>　シェア</div></a>
       </Modal>
       <Modal
         isOpen={modalIsOpen === 9}
@@ -471,12 +432,8 @@ const ModalMultiple = () => {
           </div>
         </div>
         <p className={Styles.author}>製作者:Tamaki</p>
-        <a href="">
-          <div className={Styles.driveButton}>
-            <FontAwesomeIcon icon={faTwitter} />
-            　シェア
-          </div>
-        </a>
+        <a href="https://twitter.com/share?url=http://dp9.tokyo/mayfes2021/enjoy%20%23紙festa"><div className={Styles.driveButton}><FontAwesomeIcon icon={faTwitter}/>　シェア</div></a>
+     
       </Modal>
     </div>
   );

@@ -13,23 +13,15 @@ const Header = () => {
             <Link to={"/"}>
               <StaticImage
                 src="../images/general/Logo_Header_PC.svg"
-                width={200}
-                alt=""
+                alt="Logo"
+                className={Styles.header_logo}
               />
             </Link>
           </h1>
-          <h1 className={Styles.mobile_title}>
-            <Link to={"/"}>
-              <StaticImage
-                src="../images/general/Logo_Header_Mobile.svg"
-                width={50}
-                alt=""
-              />
-            </Link>
-          </h1>
+          
           <ul className={Styles.header_navCont}>
             <li className={Styles.header_naviItem} className={Styles.green}>
-              <a href="/labcafe">Lab-Cafe</a>
+            <Link to={"/labcafe/"}>labcafe</Link>
             </li>
             <li className={Styles.header_naviItem} className={Styles.green}>
               <Link to={"/learn/"}>紙を知る</Link>
@@ -43,6 +35,16 @@ const Header = () => {
           </ul>
         </div>
       </div>
+      <h1 className={Styles.mobile_title}>
+        <div className={Styles.mobile_title_logo}>
+            <Link to={"/"}>
+              <StaticImage
+                src="../images/general/Logo_Header_Mobile.svg"
+                alt="Logo_mobile"
+              />
+            </Link>
+            </div>
+          </h1>
       <Menu width={300} right />
     </header>
   );

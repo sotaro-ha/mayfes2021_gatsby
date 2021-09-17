@@ -33,6 +33,8 @@ const customStyles = {
     textalign: 'center'
   },
 };
+
+
 const ModalMultiple = () => {
 
 
@@ -52,9 +54,9 @@ const ModalMultiple = () => {
   return(
     <div >
       <div className={Styles.container} >
-        <button className="button" className={Styles.content_panel} onClick={() => handleOpenModal(0)}>紙と伝統</button>
-        <button className="button" className={Styles.content_panel} onClick={() => handleOpenModal(1)}>紙と機能</button>
-        <button className="button" className={Styles.content_panel} onClick={() => handleOpenModal(2)}>紙と演出</button>
+        <button className={Styles.tradition} onClick={() => handleOpenModal(0)}>紙と伝統</button>
+        <button  className={Styles.functionn} onClick={() => handleOpenModal(1)}>紙と機能</button>
+        <button  className={Styles.direction} onClick={() => handleOpenModal(2)}>紙と演出</button>
       </div>
 
       <Modal 
@@ -63,6 +65,7 @@ const ModalMultiple = () => {
         shouldCloseOnEsc={true}
         shouldCloseOnOverlayClick={true}
         style={customStyles}
+        
       >
         <Tab 
         title_1="ふすま"
