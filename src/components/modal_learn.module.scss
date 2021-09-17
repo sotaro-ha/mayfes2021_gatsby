@@ -1,4 +1,11 @@
-.content_panel {
+$white-color: #fafafa;
+$background-color: #e3e3e2;
+$text-color: #3f2929;
+$green: #65c190;
+$yellow: #fbaf3a;
+$red: #eb633c;
+
+.tradition {
   width: 250px;
   margin: 20px auto;
   height: 250px;
@@ -19,6 +26,62 @@
   text-align: center;
   padding: 5px;
   background-size: cover;
+  &:hover {
+    background-color: $red;
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.3));
+  }
+}
+.direction {
+  width: 250px;
+  margin: 20px auto;
+  height: 250px;
+  margin: 20px;
+  background-color: #c4c4c4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 500;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+  background-size: cover;
+  &:hover {
+    background-color: $green;
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.3));
+  }
+}
+.functionn {
+  width: 250px;
+  margin: 20px auto;
+  height: 250px;
+  margin: 20px;
+  background-color: #c4c4c4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 500;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+  background-size: cover;
+  &:hover {
+    background-color: $yellow;
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.3));
+  }
 }
 .container {
   width: 100%;
@@ -35,8 +98,25 @@
   -ms-flex-align: center;
   align-items: center;
 }
+
 @media only screen and (max-width: 720px) {
-  .content_panel {
+  .tradition {
+    font-size: 16px;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    padding: 3px;
+    text-align: center;
+  }
+  .direction {
+    font-size: 16px;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    padding: 3px;
+    text-align: center;
+  }
+  .functionn {
     font-size: 16px;
     margin: 10px;
     width: 120px;
