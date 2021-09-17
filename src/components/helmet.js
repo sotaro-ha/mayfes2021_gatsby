@@ -45,7 +45,7 @@ export const Helmets = () => {
     },
     {
       property: "og:image",
-      content: "http://dp9.tokyo/mayfes2021/images/MV_PC.png",
+      content: "http://dp9.tokyo/mayfes2021/static/MV_PC-5bf2edd19e6f18ddbcc089fe0ff8e7a0.png",
     },
     {
       property: "og:locale",
