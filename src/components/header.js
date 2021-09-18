@@ -38,10 +38,7 @@ const Header = () => {
       <h1 className={Styles.mobile_title}>
         <div className={Styles.mobile_title_logo}>
             <Link to={"/"}>
-              <StaticImage
-                src="../images/general/Logo_Header_Mobile.svg"
-                alt="Logo_mobile"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.67 51" style={{height: '50px'}}><defs><style>{".cls-1{fill:#e3e3e2;}"}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Photos"><path class="cls-1" d="M11.83,9.79H5.35V15.2H0v6.49H5.35V27h6.48V21.69h5.35V15.2H11.83ZM40,0a17.78,17.78,0,0,0,0,35.56h.9L31.12,51H40L54.36,28.11A17.78,17.78,0,0,0,40,0Zm0,28.05A10.27,10.27,0,1,1,50.16,17.78,10.26,10.26,0,0,1,40,28.05Z"/></g></g></svg>
             </Link>
             </div>
           </h1>
