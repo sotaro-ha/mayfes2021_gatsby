@@ -1450,6 +1450,10 @@ body.fixed {
 
 .mfa {
   text-align: center;
+  &__link {
+    color: #3f2929;
+    text-decoration: underline;
+  }
 }
 
 @media only screen and (min-width: 1120px) {

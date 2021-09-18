@@ -108,6 +108,7 @@ const Layout = ({ pageTitle, children }) => {
             href="https://gogatsusai.jp/94/mfa/vote?id=502"
             target="_blank"
             rel="external nofollow noreferrer"
+            className={Styles.mfa__link}
           >
             https://gogatsusai.jp/94/mfa/vote?id=502
           </a>
