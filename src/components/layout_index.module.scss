@@ -1425,6 +1425,9 @@ body.fixed {
     background-position: 80% 10%;
     top: 0px;
   }
+  .mfa {
+    font-size: small;
+  }
 }
 
 .labcafe {
@@ -1443,6 +1446,10 @@ body.fixed {
       transform: scale(1.01);
     }
   }
+}
+
+.mfa {
+  text-align: center;
 }
 
 @media only screen and (min-width: 1120px) {

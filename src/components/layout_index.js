@@ -15,7 +15,6 @@ const Layout = ({ pageTitle, children }) => {
         <div className={(Styles.title_2, Styles.bg_title2)}>
           <div className={Styles.text_box}>
             <p>
-              {" "}
               「あなたが小学生の時、どれくらい紙を使っていましたか？
               <br />
               教科書、ノート、落書き帳…。きっと沢山使っていたと思います。
@@ -37,9 +36,7 @@ const Layout = ({ pageTitle, children }) => {
       </section>
 
       <section className={Styles.labcafe__section}>
-          <p>
-              Lab-Cafeにて展示実施中！
-          </p>
+        <p>Lab-Cafeにて展示実施中！</p>
         <Link to="/labcafe">
           <StaticImage
             src="../images/labcafe/top_link.png"
@@ -55,8 +52,7 @@ const Layout = ({ pageTitle, children }) => {
         <div className={Styles.colmn_box}>
           <div className={Styles.area}>
             <div className={Styles.colmn_image}>
-              <Link to="/learn"
-              >
+              <Link to="/learn">
                 <StaticImage src="../images/index/Main_1.svg" />
                 <StaticImage
                   src="../images/index/Main_1_Hover.svg"
@@ -70,8 +66,7 @@ const Layout = ({ pageTitle, children }) => {
           </div>
           <div className={Styles.area}>
             <div className={Styles.colmn_image}>
-              <Link to="/touch"
-              >
+              <Link to="/touch">
                 <StaticImage src="../images/index/Main_2.svg" />
                 <StaticImage
                   src="../images/index/Main_2_Hover.svg"
@@ -98,6 +93,38 @@ const Layout = ({ pageTitle, children }) => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className={Styles.mfa}>
+        <h2>五月祭総選挙の投票</h2>
+        <p>
+          「紙Festa.」を既にご覧になった方、
+          <br />
+          五月祭総選挙で本企画にご投票いただければ幸いです！
+          <br />
+          リンクはこちらになります。
+          <br />
+          <a
+            href="https://gogatsusai.jp/94/mfa/vote?id=502"
+            target="_blank"
+            rel="external nofollow noreferrer"
+          >
+            https://gogatsusai.jp/94/mfa/vote?id=502
+          </a>
+          <br />
+          また、こちらのQRコードからもご投票いただけます。
+        </p>
+        <a
+          href="https://gogatsusai.jp/94/mfa/vote?id=502"
+          target="_blank"
+          rel="external nofollow noreferrer"
+        >
+          <StaticImage
+            src="../images/general/mfa.png"
+            alt=""
+            width={200}
+          ></StaticImage>
+        </a>
       </section>
 
       <Footer />
